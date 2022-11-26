@@ -55,6 +55,7 @@ h2 {
 #resultado {
     background-color: #ffffff;
     border-radius: 5px;
+    overflow-wrap: break-word;
     color: #000000;
     height: 30px;
     width: 14.5rem;
