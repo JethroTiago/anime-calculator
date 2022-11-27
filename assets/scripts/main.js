@@ -1,5 +1,6 @@
 const arigato = new Audio('/assets/sounds/Arigato.mp3');
 const aha = new Audio('assets/sounds/Aha.mp3');
+const yamete = new Audio('assets/sounds/Yamete.mp3');
 
 function insert(num) {
     aha.play();
@@ -8,6 +9,7 @@ function insert(num) {
 }
 
 function clean() {
+    yamete.play();
     document.querySelector('#result').innerHTML = "";
 }
 
