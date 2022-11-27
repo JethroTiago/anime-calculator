@@ -1,4 +1,8 @@
+const arigato = new Audio('/assets/sounds/Arigato.mp3');
+const aha = new Audio('assets/sounds/Aha.mp3');
+
 function insert(num) {
+    aha.play();
     let numero = document.querySelector('#result').innerHTML;
     document.querySelector('#result').innerHTML = numero + num;
 }
@@ -13,6 +17,7 @@ function back() {
 }
 
 function calcular() {
+    arigato.play();
     let resultado = document.querySelector('#result').innerHTML;
     if(resultado) {
         document.querySelector('#result').innerHTML = eval(resultado)
