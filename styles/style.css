@@ -1,67 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Fredoka One', cursive;
 }
 
-.fundo {
-    background-image: linear-gradient(to bottom, #a295db, #8d5887);
+.fundo{
+    background-image: linear-gradient(45deg, rgb(127, 79, 190), rgb(79, 42, 165));
+    height: 100vh;
     color: #ffffff;
     text-align: center;
-    min-height: 100vh;
 }
 
-h1 {
-    font-weight: 400;
-    font-size: 7vw;
-}
-
-h2 {
-    font-family: 'Fredoka One', cursive;
-    font-size: 1.8rem;
-}
-
-.calculadora {
-    width: 20vw;
-    height: 30vw;
+.calculadora{
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     border-radius: 15px;
-    padding: 20px;
+    padding: 15px;
 }
 
-.botao {
-    width: 1em;
-    height: 1em;
-    font-size: 40px;
-    cursor: pointer;
-    padding: 5px;
-    margin: 13px;
-    background-color: rgb(65, 64, 64);
-    border: none;
+.botao{
+    width: 50px;
+    height: 50px;
     border-radius: 5px;
-    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    color: white;
 }
 
 .botao:hover{
-    background-color: #000000;
+    background-color: black;
 }
 
-#resultado {
+#resultado{
+    width: 207px;
     background-color: #ffffff;
     border-radius: 5px;
-    overflow-wrap: break-word;
-    color: #000000;
     height: 30px;
-    width: 14.5rem;
-    margin: 13px;
+    margin: 5px;
     font-size: 25px;
+    color: #000000;
     text-align: right;
     padding: 5px;
 }
