@@ -1,22 +1,22 @@
 function insert(num) {
-    let numero = document.querySelector('#resultado').innerHTML;
-    document.querySelector('#resultado').innerHTML = numero + num;
+    let numero = document.querySelector('#result').innerHTML;
+    document.querySelector('#result').innerHTML = numero + num;
 }
 
 function clean() {
-    document.querySelector('#resultado').innerHTML = "";
+    document.querySelector('#result').innerHTML = "";
 }
 
 function back() {
-    let resultado = document.querySelector('#resultado').innerHTML;
-    document.querySelector('#resultado').innerHTML = resultado.substring(0, resultado.length -1);
+    let resultado = document.querySelector('#result').innerHTML;
+    document.querySelector('#result').innerHTML = resultado.substring(0, resultado.length -1);
 }
 
 function calcular() {
-    let resultado = document.querySelector('#resultado').innerHTML;
+    let resultado = document.querySelector('#result').innerHTML;
     if(resultado) {
-        document.querySelector('#resultado').innerHTML = eval(resultado)
+        document.querySelector('#result').innerHTML = eval(resultado)
     } else {
-        document.querySelector('#resultado').innerHTML = "Nada..."
+        document.querySelector('#result').innerHTML = "Nothing..."
     }
 }
